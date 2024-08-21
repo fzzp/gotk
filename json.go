@@ -12,14 +12,6 @@ import (
 	"strings"
 )
 
-type JSONContextKey string
-
-var (
-	VersionCtxKey    JSONContextKey = "gotk_version"
-	RequestIDCtxKey  JSONContextKey = "gotk_request_id"
-	ReadJSONMaxBytes                = 2 << 20 // 默认2MB
-)
-
 // JSON 响应数据
 type JSON struct {
 	BizCode   string `json:"bizCode"`             // 业务编码
